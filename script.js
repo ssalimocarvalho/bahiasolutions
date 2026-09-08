@@ -24,26 +24,7 @@ if (siteHeader) {
   window.addEventListener('scroll', onScroll, { passive: true });
 }
 
-// ============ Reveal-on-scroll ============
-const revealSelectors = [
-  '.section-head', '.expertise-item', '.value-item', '.team-card',
-  '.touch-card', '.case-card', '.why-item', '.outcome', '.join-item',
-  '.tl-row', '.stat', '.stat-hero', '.quote-block blockquote'
-];
-const revealTargets = document.querySelectorAll(revealSelectors.join(','));
-const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-if (revealTargets.length && !prefersReducedMotion && 'IntersectionObserver' in window) {
-  revealTargets.forEach(el => el.classList.add('reveal'));
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('in-view');
-        io.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.15 });
-  revealTargets.forEach(el => io.observe(el));
-}
+// (scroll-reveal animation is handled by GSAP + ScrollTrigger — see animations.js)
 
 // ============ FAQ accordion ============
 const faqItems = document.querySelectorAll('.faq-item');
