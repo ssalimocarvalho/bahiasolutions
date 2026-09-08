@@ -35,13 +35,13 @@ document.addEventListener('DOMContentLoaded', () => {
       .from('.hero-facts > *', { opacity: 0, y: 14, stagger: .1, duration: .5 }, '-=0.3');
   }
 
-  /* ---------- Hero blob: gentle parallax drift while scrolling past ---------- */
-  gsap.utils.toArray('.page-hero .blob, .hero .blob').forEach((blob) => {
-    gsap.to(blob, {
-      y: 70,
+  /* ---------- Hero blob-field: gentle parallax drift while scrolling past ---------- */
+  gsap.utils.toArray('.page-hero .blob-field, .hero .blob-field').forEach((field) => {
+    gsap.to(field, {
+      y: 60,
       ease: 'none',
       scrollTrigger: {
-        trigger: blob.closest('.page-hero, .hero'),
+        trigger: field.closest('.page-hero, .hero'),
         start: 'top top',
         end: 'bottom top',
         scrub: 0.6,
@@ -49,15 +49,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ---------- Hero gradient: infinite drift from one point to another ---------- */
-  gsap.utils.toArray('.blob radialGradient').forEach((grad) => {
-    gsap.to(grad, {
-      attr: { cx: '68%', cy: '62%' },
-      duration: 7,
-      ease: 'sine.inOut',
-      yoyo: true,
-      repeat: -1,
-    });
+  /* ---------- Hero gradient: noticeable, smooth, infinite drift ----------
+     Each layered blob moves independently (different distance / duration /
+     direction) so the whole gradient field feels alive rather than static,
+     while every motion is a slow smooth sine-eased loop (no jumps/snaps). */
+  gsap.utils.toArray('.blob-field').forEach((field) => {
+    const a = field.querySelector('.blob-a');
+    const b = field.querySelector('.blob-b');
+    const c = field.querySelector('.blob-c');
+    const d = field.querySelector('.blob-d');
+
+    if (a) gsap.to(a, { x: 70, y: 50, scale: 1.08, duration: 9, ease: 'sine.inOut', yoyo: true, repeat: -1 });
+    if (b) gsap.to(b, { x: -90, y: 40, scale: 1.1, duration: 11, ease: 'sine.inOut', yoyo: true, repeat: -1, delay: .3 });
+    if (c) gsap.to(c, { x: 60, y: -60, scale: 1.12, duration: 8, ease: 'sine.inOut', yoyo: true, repeat: -1, delay: .6 });
+    if (d) gsap.to(d, { x: -50, y: 70, scale: 1.15, duration: 10, ease: 'sine.inOut', yoyo: true, repeat: -1, delay: .15 });
   });
 
   /* ---------- Section headings ---------- */
