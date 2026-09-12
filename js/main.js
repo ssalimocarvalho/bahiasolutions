@@ -92,10 +92,10 @@ document.addEventListener('DOMContentLoaded', function () {
         const btn = form.querySelector('button[type="submit"]');
         if (btn) {
           const original = btn.innerHTML;
-          btn.innerHTML = 'Sending...';
+          btn.innerHTML = 'A enviar...';
           btn.disabled = true;
           setTimeout(() => {
-            btn.innerHTML = 'Message sent ✓';
+            btn.innerHTML = 'Mensagem enviada ✓';
             setTimeout(() => {
               btn.innerHTML = original;
               btn.disabled = false;

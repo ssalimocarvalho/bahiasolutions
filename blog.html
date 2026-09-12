@@ -1,48 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-MZ">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog — Nexora</title>
-  <meta name="description" content="Insights on product strategy, design and engineering from the Nexora team.">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23155EEF'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Arial' font-weight='800' fill='white' text-anchor='middle'%3EN%3C/text%3E%3C/svg%3E">
+  <title>Blog — BSOLUTIONS</title>
+  <meta name="description" content="Artigos da BSOLUTIONS sobre transformação digital, automação de processos e gestão de TI para empresas em Moçambique.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23111111'/%3E%3Ctext x='50' y='70' font-size='58' font-family='Arial' font-weight='800' fill='%23FFC139' text-anchor='middle'%3EB%3C/text%3E%3C/svg%3E">
+
+  <!-- Site adaptado a partir do template Nexora (ThemeWagon / Harshad Mahadik, licenca MIT) para a BSOLUTIONS, SU, LDA. Layout original preservado; apenas o conteudo foi substituido. -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
   <link href="css/custom.css" rel="stylesheet">
 </head>
 <body>
-
+  <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-nexora fixed-top">
     <div class="container">
-      <a class="navbar-brand navbar-brand-custom" href="index.html">Nexora<span>.</span></a>
-      <button class="navbar-toggler navbar-toggler-custom" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand navbar-brand-custom d-flex align-items-center" href="index.html">
+        <img src="img/logo.png" alt="BSOLUTIONS" style="height:42px;width:auto;">
+      </a>
+      <button class="navbar-toggler navbar-toggler-custom" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Alternar navegação">
         <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </button>
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto align-items-lg-center gap-1 mt-3 mt-lg-0">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-          <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link nav2" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link nav2" href="about.html">Sobre Nós</a></li>
+          <li class="nav-item"><a class="nav-link nav2" href="services.html">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link nav2" href="portfolio.html">Portfólio</a></li>
+          <li class="nav-item"><a class="nav-link nav2 active" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link nav2" href="pricing.html">Preços</a></li>
+          <li class="nav-item"><a class="nav-link nav2" href="contact.html">Contacto</a></li>
           <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-            <a href="contact.html" class="btn btn-primary btn-sm-custom w-100">Get Started</a>
+            <a href="contact.html" class="btn btn-primary btn-sm-custom w-100">Começar</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
+
   <header class="page-header">
     <div class="container">
-      <h1 class="mb-3">Insights &amp; Resources</h1>
+      <h1 class="mb-3">Ideias &amp; Recursos</h1>
       <div class="breadcrumb-custom">
-        <a href="index.html">Home</a> <span>/</span> <span class="active">Blog</span>
+        <a href="index.html">Início</a> <span>/</span> <span class="active">Blog</span>
       </div>
     </div>
   </header>
@@ -57,15 +64,14 @@
             <div class="card-premium p-0 overflow-hidden">
               <div class="row g-0">
                 <div class="col-md-6">
-                  <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=450&fit=crop" class="w-100 h-100" style="object-fit:cover; min-height:260px;" alt="Team discussing product roadmap">
+                  <img src="img/hero-laptop.png" class="w-100 h-100" style="object-fit:cover; min-height:260px;" alt="Transformação digital para PMEs">
                 </div>
                 <div class="col-md-6 d-flex flex-column justify-content-center p-4">
-                  <span class="tag-pill">Product Strategy</span>
-                  <h3 class="mb-2">How to Build a Product Roadmap That Survives Contact With Reality</h3>
-                  <p class="mb-3">Most roadmaps fall apart within a quarter. Here's the framework we use to keep ours adaptable without losing direction.</p>
+                  <span class="tag-pill">Transformação Digital</span>
+                  <h3 class="mb-2">Transformação digital para PMEs em Moçambique: por onde começar</h3>
+                  <p class="mb-3">Nem toda a digitalização exige grandes investimentos. Veja os primeiros passos que fazem mais diferença para pequenas e médias empresas.</p>
                   <div class="d-flex align-items-center gap-2 text-slate-light small">
-                    <img src="https://i.pravatar.cc/32?img=8" class="rounded-circle" style="width:28px;height:28px;" alt="Daniel Hwang">
-                    <span>Daniel Hwang</span> · <span>June 2, 2026</span> · <span>7 min read</span>
+                    <span>Equipa BSOLUTIONS</span> &middot; <span>2026</span> &middot; <span>6 min de leitura</span>
                   </div>
                 </div>
               </div>
@@ -77,14 +83,14 @@
               <a href="blog-details.html" class="text-decoration-none">
                 <div class="card-premium p-0 overflow-hidden">
                   <div class="blog-card-img">
-                    <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=500&h=320&fit=crop" alt="Design system component library">
+                    <img src="img/solutions-graphic.png" alt="Automação de processos: por onde começar na sua empresa" style="object-fit:contain; background:#fff;">
                   </div>
                   <div class="blog-card-body pb-4">
-                    <span class="tag-pill">Design</span>
-                    <h3 class="card-title">Why Your Design System Keeps Falling Apart</h3>
-                    <p class="small mb-0">Three common reasons design systems decay — and how to structure yours to last.</p>
+                    <span class="tag-pill">Automação</span>
+                    <h3 class="card-title">Automação de processos: por onde começar na sua empresa</h3>
+                    <p class="small mb-0">Identifique as tarefas repetitivas que mais consomem tempo à sua equipa.</p>
                     <div class="meta-row">
-                      <span><i class="bi bi-person me-1"></i>Priya Nair</span>
+                      <span><i class="bi bi-person me-1"></i>Equipa BSOLUTIONS</span>
                       <span><i class="bi bi-clock me-1"></i>5 min</span>
                     </div>
                   </div>
@@ -95,15 +101,15 @@
               <a href="blog-details.html" class="text-decoration-none">
                 <div class="card-premium p-0 overflow-hidden">
                   <div class="blog-card-img">
-                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500&h=320&fit=crop" alt="Cloud infrastructure servers">
+                    <img src="img/services-hero.png" alt="Porque é que a gestão de TI importa para as PMEs" style="object-fit:contain; background:#fff;">
                   </div>
                   <div class="blog-card-body pb-4">
-                    <span class="tag-pill">Engineering</span>
-                    <h3 class="card-title">A Practical Guide to Cutting Cloud Costs by 40%</h3>
-                    <p class="small mb-0">The audit checklist we run on every client infrastructure review.</p>
+                    <span class="tag-pill">Segurança de TI</span>
+                    <h3 class="card-title">Porque é que a gestão de TI importa para as PMEs</h3>
+                    <p class="small mb-0">Pequenos cuidados de segurança e gestão de servidores que evitam grandes problemas.</p>
                     <div class="meta-row">
-                      <span><i class="bi bi-person me-1"></i>Marcus Lee</span>
-                      <span><i class="bi bi-clock me-1"></i>9 min</span>
+                      <span><i class="bi bi-person me-1"></i>Equipa BSOLUTIONS</span>
+                      <span><i class="bi bi-clock me-1"></i>4 min</span>
                     </div>
                   </div>
                 </div>
@@ -113,14 +119,14 @@
               <a href="blog-details.html" class="text-decoration-none">
                 <div class="card-premium p-0 overflow-hidden">
                   <div class="blog-card-img">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=320&fit=crop" alt="Analytics charts on laptop">
+                    <img src="img/hero-laptop.png" alt="Sinais de que a sua empresa precisa de um sistema de gestão" style="object-fit:contain; background:#fff;">
                   </div>
                   <div class="blog-card-body pb-4">
-                    <span class="tag-pill">Growth</span>
-                    <h3 class="card-title">The Onboarding Metrics That Actually Predict Churn</h3>
-                    <p class="small mb-0">Forget vanity metrics — these are the signals worth tracking from day one.</p>
+                    <span class="tag-pill">Gestão</span>
+                    <h3 class="card-title">Sinais de que a sua empresa precisa de um sistema de gestão</h3>
+                    <p class="small mb-0">Como perceber quando as folhas de cálculo deixaram de ser suficientes.</p>
                     <div class="meta-row">
-                      <span><i class="bi bi-person me-1"></i>Anna Kowalski</span>
+                      <span><i class="bi bi-person me-1"></i>Equipa BSOLUTIONS</span>
                       <span><i class="bi bi-clock me-1"></i>6 min</span>
                     </div>
                   </div>
@@ -131,15 +137,15 @@
               <a href="blog-details.html" class="text-decoration-none">
                 <div class="card-premium p-0 overflow-hidden">
                   <div class="blog-card-img">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&h=320&fit=crop" alt="Developer writing code">
+                    <img src="img/logos/global-logistica.png" alt="Boas práticas de gestão de frota para pequenas transportadoras" style="object-fit:contain; background:#fff;">
                   </div>
                   <div class="blog-card-body pb-4">
-                    <span class="tag-pill">Engineering</span>
-                    <h3 class="card-title">Migrating a Legacy App Without Breaking Production</h3>
-                    <p class="small mb-0">Our phased-migration playbook, tested across a dozen client codebases.</p>
+                    <span class="tag-pill">Logística</span>
+                    <h3 class="card-title">Boas práticas de gestão de frota para pequenas transportadoras</h3>
+                    <p class="small mb-0">Organização básica que reduz custos e atrasos nas operações de transporte.</p>
                     <div class="meta-row">
-                      <span><i class="bi bi-person me-1"></i>Marcus Lee</span>
-                      <span><i class="bi bi-clock me-1"></i>8 min</span>
+                      <span><i class="bi bi-person me-1"></i>Equipa BSOLUTIONS</span>
+                      <span><i class="bi bi-clock me-1"></i>7 min</span>
                     </div>
                   </div>
                 </div>
@@ -149,32 +155,32 @@
               <a href="blog-details.html" class="text-decoration-none">
                 <div class="card-premium p-0 overflow-hidden">
                   <div class="blog-card-img">
-                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=500&h=320&fit=crop" alt="Team brainstorming with sticky notes">
-                  </div>
-                  <div class="blog-card-body pb-4">
-                    <span class="tag-pill">Strategy</span>
-                    <h3 class="card-title">Running Discovery Sprints Remotely: A Step-by-Step Guide</h3>
-                    <p class="small mb-0">How we replicate in-person workshop energy across timezones.</p>
-                    <div class="meta-row">
-                      <span><i class="bi bi-person me-1"></i>Daniel Hwang</span>
-                      <span><i class="bi bi-clock me-1"></i>10 min</span>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-6 reveal">
-              <a href="blog-details.html" class="text-decoration-none">
-                <div class="card-premium p-0 overflow-hidden">
-                  <div class="blog-card-img">
-                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=320&fit=crop" alt="Mobile app prototypes on table">
+                    <img src="img/solutions-graphic.png" alt="Porque é que a identidade visual importa desde o primeiro dia" style="object-fit:contain; background:#fff;">
                   </div>
                   <div class="blog-card-body pb-4">
                     <span class="tag-pill">Design</span>
-                    <h3 class="card-title">Accessibility Isn't Optional: A Practical Audit Checklist</h3>
-                    <p class="small mb-0">A 20-point checklist we apply before every product handoff.</p>
+                    <h3 class="card-title">Porque é que a identidade visual importa desde o primeiro dia</h3>
+                    <p class="small mb-0">Um logótipo e materiais consistentes ajudam a transmitir confiança a clientes.</p>
                     <div class="meta-row">
-                      <span><i class="bi bi-person me-1"></i>Priya Nair</span>
+                      <span><i class="bi bi-person me-1"></i>Equipa BSOLUTIONS</span>
+                      <span><i class="bi bi-clock me-1"></i>5 min</span>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-6 reveal">
+              <a href="blog-details.html" class="text-decoration-none">
+                <div class="card-premium p-0 overflow-hidden">
+                  <div class="blog-card-img">
+                    <img src="img/services-hero.png" alt="O que aprendemos a trabalhar com mais de 40 clientes em Moçambique" style="object-fit:contain; background:#fff;">
+                  </div>
+                  <div class="blog-card-body pb-4">
+                    <span class="tag-pill">Empresa</span>
+                    <h3 class="card-title">O que aprendemos a trabalhar com mais de 40 clientes em Moçambique</h3>
+                    <p class="small mb-0">Alguns padrões que vemos repetir-se em diferentes sectores de actividade.</p>
+                    <div class="meta-row">
+                      <span><i class="bi bi-person me-1"></i>Equipa BSOLUTIONS</span>
                       <span><i class="bi bi-clock me-1"></i>6 min</span>
                     </div>
                   </div>
@@ -184,12 +190,11 @@
           </div>
 
           <!-- Pagination -->
-          <nav class="mt-5 reveal" aria-label="Blog pagination">
+          <nav class="mt-5 reveal" aria-label="Paginação do blog">
             <ul class="pagination justify-content-center gap-2">
               <li class="page-item"><a class="page-link rounded-3 border-0 bg-soft text-navy" href="#"><i class="bi bi-arrow-left"></i></a></li>
               <li class="page-item"><a class="page-link rounded-3 border-0 btn-primary text-white" href="#">1</a></li>
               <li class="page-item"><a class="page-link rounded-3 border-0 bg-soft text-navy" href="#">2</a></li>
-              <li class="page-item"><a class="page-link rounded-3 border-0 bg-soft text-navy" href="#">3</a></li>
               <li class="page-item"><a class="page-link rounded-3 border-0 bg-soft text-navy" href="#"><i class="bi bi-arrow-right"></i></a></li>
             </ul>
           </nav>
@@ -198,41 +203,39 @@
         <!-- SIDEBAR -->
         <div class="col-lg-4">
           <div class="widget reveal">
-            <h5>Search</h5>
+            <h5>Pesquisar</h5>
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search articles...">
+              <input type="text" class="form-control" placeholder="Pesquisar artigos...">
               <button class="btn btn-primary"><i class="bi bi-search"></i></button>
             </div>
           </div>
           <div class="widget reveal">
-            <h5>Categories</h5>
+            <h5>Categorias</h5>
             <ul class="widget-link-list">
-              <li>Product Strategy <span>12</span></li>
-              <li>Design <span>18</span></li>
-              <li>Engineering <span>24</span></li>
-              <li>Growth <span>9</span></li>
-              <li>Company News <span>5</span></li>
+              <li>Transformação Digital <span>1</span></li>
+              <li>Automação <span>1</span></li>
+              <li>Segurança de TI <span>1</span></li>
+              <li>Gestão <span>1</span></li>
+              <li>Logística <span>1</span></li>
             </ul>
           </div>
           <div class="widget reveal">
-            <h5>Popular Tags</h5>
+            <h5>Etiquetas Populares</h5>
             <div class="d-flex flex-wrap gap-2">
-              <span class="badge-soft">UX Research</span>
-              <span class="badge-soft">Figma</span>
-              <span class="badge-soft">React</span>
-              <span class="badge-soft">SaaS</span>
-              <span class="badge-soft">DevOps</span>
-              <span class="badge-soft">Branding</span>
-              <span class="badge-soft">Onboarding</span>
+              <span class="badge-soft">Gestão</span>
+              <span class="badge-soft">TI</span>
+              <span class="badge-soft">Automação</span>
+              <span class="badge-soft">Logística</span>
+              <span class="badge-soft">Design</span>
             </div>
           </div>
           <div class="widget bg-gradient-dark text-white border-0 reveal">
             <div class="icon-box icon-box-white mb-3"><i class="bi bi-envelope-paper"></i></div>
-            <h5 class="text-white">Subscribe to our newsletter</h5>
-            <p class="text-white-50 small mb-3">One email a month — practical insights, no fluff.</p>
+            <h5 class="text-white">Subscreva a nossa newsletter</h5>
+            <p class="text-white-50 small mb-3">Um e-mail por mês — dicas práticas, sem enrolação.</p>
             <form class="needs-validation" novalidate>
-              <input type="email" class="form-control mb-2" placeholder="Your email" required style="background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.12); color:#fff;">
-              <button class="btn btn-primary w-100" type="submit">Subscribe</button>
+              <input type="email" class="form-control mb-2" placeholder="O seu e-mail" required style="background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.12); color:#fff;">
+              <button class="btn btn-primary w-100" type="submit">Subscrever</button>
             </form>
           </div>
         </div>
@@ -240,57 +243,60 @@
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="footer-nexora">
     <div class="container">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6">
-          <a class="navbar-brand-custom d-inline-block mb-3" href="index.html" style="color:#fff !important;">Nexora<span style="color:var(--n-primary)">.</span></a>
-          <p class="text-white-50 mb-4" style="max-width:320px;">We help ambitious SaaS and tech companies design, build and scale digital products that customers love.</p>
+          <a class="navbar-brand-custom d-inline-block mb-3" href="index.html">
+            <img src="img/logo.png" alt="BSOLUTIONS" style="height:38px;width:auto;filter:brightness(0) invert(1);">
+          </a>
+          <p class="text-white-50 mb-4" style="max-width:320px;">Ajudamos empresas, instituições e organizações moçambicanas a melhorar a sua gestão, eficiência operacional e transformação digital.</p>
           <div class="d-flex gap-2">
-            <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
             <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
-            <a href="#" class="social-icon"><i class="bi bi-dribbble"></i></a>
             <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-whatsapp"></i></a>
           </div>
         </div>
         <div class="col-lg-2 col-md-6 col-6">
-          <h6>Company</h6>
-          <a href="about.html">About Us</a>
-          <a href="services.html">Services</a>
-          <a href="portfolio.html">Portfolio</a>
+          <h6>Empresa</h6>
+          <a href="about.html">Sobre Nós</a>
+          <a href="services.html">Serviços</a>
+          <a href="portfolio.html">Portfólio</a>
           <a href="blog.html">Blog</a>
-          <a href="contact.html">Careers</a>
+          <a href="contact.html">Carreiras</a>
         </div>
         <div class="col-lg-2 col-md-6 col-6">
-          <h6>Services</h6>
-          <a href="service-details.html">Product Strategy</a>
-          <a href="service-details.html">UI/UX Design</a>
-          <a href="service-details.html">Web Development</a>
-          <a href="service-details.html">Cloud &amp; DevOps</a>
-          <a href="service-details.html">Growth Marketing</a>
+          <h6>Serviços</h6>
+          <a href="service-details.html">Tecnologia e Informação</a>
+          <a href="services.html">Automação de Processos</a>
+          <a href="services.html">Designer Gráfico</a>
+          <a href="services.html">Transporte</a>
+          <a href="services.html">Logística &amp; Procurement</a>
         </div>
         <div class="col-lg-4 col-md-6">
-          <h6>Stay in the loop</h6>
-          <p class="text-white-50 mb-3">Get product updates and insights from our team, once a month.</p>
+          <h6>Fique a par</h6>
+          <p class="text-white-50 mb-3">Novidades e dicas da equipa BSOLUTIONS, uma vez por mês.</p>
           <form class="d-flex gap-2 needs-validation" novalidate>
-            <input type="email" class="form-control" placeholder="Work email" required style="background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.12); color:#fff;">
+            <input type="email" class="form-control" placeholder="O seu e-mail" required style="background:rgba(255,255,255,0.06); border-color:rgba(255,255,255,0.12); color:#fff;">
             <button class="btn btn-primary flex-shrink-0" type="submit"><i class="bi bi-send"></i></button>
           </form>
         </div>
       </div>
       <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 text-center text-md-start">
-        <p class="mb-0" style="display: flex;">&copy; 2026 Nexora. All rights reserved by <a target="_blank" href="https://github.com/HarshadMahadik" style="color: white;padding-left: 5px;"> Harshad Mahadik</a> &bull; Distributed by <a target="_blank" href="https://themewagon.com/" style="color: white;padding-left: 5px;">Themewagon</a></p>
+        <p class="mb-0">&copy; 2026 BSOLUTIONS, SU, LDA. Todos os direitos reservados. NUIT: 402263512</p>
         <div class="d-flex gap-4">
-          <a href="#" class="mb-0">Privacy Policy</a>
-          <a href="#" class="mb-0">Terms of Service</a>
+          <a href="#" class="mb-0">Política de Privacidade</a>
+          <a href="#" class="mb-0">Termos de Serviço</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <button class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+  <button class="back-to-top" aria-label="Voltar ao topo"><i class="bi bi-arrow-up"></i></button>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
